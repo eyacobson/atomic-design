@@ -1,0 +1,134 @@
+<!-- This link is amazingly useful for CSS centering!!: https://www.w3.org/Style/Examples/007/center.en.html -->
+<!-- Centering multiple <div>s: https://www.impressivewebs.com/center-multiple-divs/ -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<meta http-equiv="cleartype" content="on"/>
+
+		<title>Atoms, Molecules, & Organisms</title>
+
+		<link rel="stylesheet" type="text/css" href="exercises.css">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Anonymous+Pro">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lekton">
+	</head>
+
+	<body>
+		<section>
+			<section id="clearfix">
+				<h1>Atoms</h1>
+				<div id="container" class="item">
+					<h2 id="container-label">Container</h2>
+				</div>
+			
+				<div class="item">
+					<h2>Label</h2>
+					<label>Enter your feedback</label>
+				</div>
+			
+				<div class="item">
+					<h2>Text field</h2>
+					<input type="text">
+				</div>
+			
+				<div class="item">
+					<h2>Label</h2>
+					<label>Are you a member?</label>
+				</div>
+			
+				<div class="item">
+					<h2>Radio buttons</h2>
+					<div>
+						<input type="radio" name="yesorno" value="Yes">
+						<div class="circle"></div>
+					</div>
+					
+					<div>
+						<input type="radio" name="yesorno" value="No">
+						<div class="circle"></div>
+					</div>
+				</div>
+				
+				<div class="item">
+					<h2>Submit button</h2>
+					<input type="submit" value="Submit">
+				</div>
+				
+				<h1>Molecule</h1>
+				<div class="molorg item">
+					<h2 class="molorg-label">Label, text field, radio button, <br> submit button</h2>
+					<div>
+						<div class="row">
+							<label>Enter your feedback</label>
+							<input type="text">
+						</div>
+					
+						<div class="row">
+							<label>Are you a member?</label>
+							<label class="radio">Y</label>
+							<div class="radio">
+								<input type="radio" name="yesorno" value="Yes">
+								<div class="circle"></div>
+							</div>
+						
+							<label class="radio">N</label>
+							<div class="radio">
+								<input type="radio" name="yesorno" value="No">
+								<div class="circle"></div>
+							</div>
+						</div>
+					
+						<div id="submit" class="row">
+							<input type="submit" value="Submit">
+						</div>
+					</div>
+				</div>
+				
+				<h1>Organism</h1>
+				<div class="molorg item">
+					<h2 class="molorg-label">Login form + feedback form</h2>
+					<form>
+						<div id="login">
+							<div class="row">
+								<label for="username">Username: </label>
+								<input type="text" name="username">
+							</div>
+						
+							<div class="row">
+								<label for="password">Password: </label>
+								<input type="text" name="password">
+							</div>
+						</div>
+						
+						<div>
+							<div class="row">
+								<label>Enter your feedback</label>
+								<input type="text">
+							</div>
+							
+							<div class="row">
+								<label>Are you a member?</label>
+								<label class="radio">Y</label>
+								<div class="radio">
+									<input type="radio" name="yesorno" value="Yes">
+									<div class="circle"></div>
+								</div>
+						
+								<label class="radio">N</label>
+								<div class="radio">
+									<input type="radio" name="yesorno" value="No">
+									<div class="circle"></div>
+								</div>
+							</div>
+							
+							<div id="submit" class="row">
+								<input type="submit" value="Submit">
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+	</body>
+</html>
